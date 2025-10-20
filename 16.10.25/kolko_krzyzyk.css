@@ -1,10 +1,12 @@
 table {
     border-collapse: collapse;
     margin:50px auto;
+    font-size: 50px;
 }
 td {
-    border: 6px solid black;
+    border: 3px solid black;
     height: 70px;
     width: 70px;
     text-align: center;
+    font-weight: bolder;
 }
