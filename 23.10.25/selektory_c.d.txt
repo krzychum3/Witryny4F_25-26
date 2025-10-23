@@ -1,0 +1,15 @@
+Selektory potomka, dziecka, identyfikatora i klasy
+
+Selektor potomka:
+Wybiera elementy, które znajdują się wewnątrz innych elementów (np. ul li). 
+
+Selektor dziecka:
+Wybiera elementy, które są bezpośrednimi dziećmi innego elementu (np. div > p
+
+Selektor identyfikatora:
+biera element o unikalnym identyfikatorze (nadawanym za pomocą atrybutu id). 
+Przykład: #naglowek { background-color: white; } stylizuje jeden, unikalny element z id="naglowek". 
+
+Selektor klasy:
+Wybiera elementy posiadające określoną klasę (nadawaną za pomocą atrybutu class). 
+Przykład: .intro { font-size: 16px; } stylizuje wszystkie elementy z class="intro"
