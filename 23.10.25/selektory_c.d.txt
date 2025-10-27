@@ -4,7 +4,7 @@ Selektor potomka:
 Wybiera elementy, które znajdują się wewnątrz innych elementów (np. ul li). 
 
 Selektor dziecka:
-Wybiera elementy, które są bezpośrednimi dziećmi innego elementu (np. div > p
+Wybiera elementy, które są bezpośrednimi dziećmi innego elementu (np. div > p)
 
 Selektor identyfikatora:
 biera element o unikalnym identyfikatorze (nadawanym za pomocą atrybutu id). 
