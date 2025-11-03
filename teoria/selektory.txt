@@ -1,0 +1,7 @@
+Selektory proste (Wybiera określony element p, np: <p>)
+uniwersalne (*, wybiera wszystkie elementy w body)
+
+
+
+
+
