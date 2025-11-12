@@ -1,4 +1,4 @@
-Selektory potomka, dziecka, identyfikatora i klasy
+Selektory potomka, dziecka, identyfikatora i klasy i innych
 
 Selektor potomka:
 Wybiera elementy, które znajdują się wewnątrz innych elementów (np. ul li). 
@@ -13,3 +13,25 @@ Przykład: #naglowek { background-color: white; } stylizuje jeden, unikalny elem
 Selektor klasy:
 Wybiera elementy posiadające określoną klasę (nadawaną za pomocą atrybutu class). 
 Przykład: .intro { font-size: 16px; } stylizuje wszystkie elementy z class="intro"
+
+Selektor pseudoklasy:
+Selektory pseudoklasy w HTML to specjalne selektory CSS, które pozwalają na wybranie 
+i stylizowanie elementów na podstawie ich stanu (np. :hover dla najechanej myszką) lub
+pozycji w drzewie dokumentu (np. :first-child dla pierwszego elementu dziecka).
+np. p.pierwszy::first-line
+
+Selektor elementu:
+p::first-line
+
+
+
+Selektor atrybutu:
+Selektor atrybutu w HTML pozwala na stylowanie elementów na podstawie ich atrybutów lub
+wartości tych atrybutów, używając nawiasów kwadratowych [] w selektorze CSS. 
+Jest to przydatne do wybierania elementów posiadających określony 
+atrybut (np. [lang]), o konkretnej wartości (np. [type="text"])
+np.  
+input[type="text"] {
+            border: 5px solid red;
+            border-radius: 5px;
+        }
