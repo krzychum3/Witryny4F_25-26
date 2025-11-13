@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Papyrus;
+            font-size: large;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px dotted grey;
+        }
+
+        td {
+            border: 1px dotted gray;
+            text-align: left;
+            margin: 10px 10px 10px
+        }
+
+        input[type="text"] {}
+
+        input[type="password"] {}
+
+        input[type="text"]:focus {}
+    </style>
+</head>
+
+<body>
+    <form>
+        <table>
+        <tr>
+            <td>Adres e-mail:</td>
+            <td><input type="text" placeholder="adres@email.com"></td>
+        </tr>
+        <tr>
+            <td>Hasło:</td>
+            <td><input type="password" placeholder="minimum 8 znaków"></td>
+        </tr>
+        <tr>
+            <td>Rola</td>
+            <td><input type="radio" checked >kandydat<input type="radio">aplikant<input type="radio">kursant<input
+                    type="radio">absolwent</td>
+        </tr>
+        <tr>
+            <td>Grupa</td>
+            <td><input type="checkbox">wiosenna<input type="checkbox">letnia<input type="checkbox">jesienna<input
+                    type="checkbox">zimowa</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Wyślij"></td>
+        </tr>
+    
+        </table>
+    </form>
+</body>
+
+</html>
