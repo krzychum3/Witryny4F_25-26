@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Horizontal Form 2</title>
+<style>
+    body {
+        font-family: Papyrus; 
+        font-size: large;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    td {
+        border: 1px dotted gray;
+        padding: 10px 30px;
+        vertical-align: middle;
+    }
+
+    /* lewa kolumna 25%, prawa 75% */
+    .col-left {
+        width: 25%;
+    }
+    .col-right {
+        width: 75%;
+    }
+
+    /* pola tekstowe, hasło, przyciski */
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    button {
+        background-color: lightblue;
+        border: 2px solid cadetblue;
+        border-radius: 15px;
+        font-family: "Poor Richard";
+        font-size: large;
+        padding: 5px 10px;
+        width: 100%;
+    }
+
+    /* efekt podczas wpisywania */
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus {
+        background-color: aliceblue;
+    }
+
+    /* radio i checkbox */
+    label {
+        margin-right: 15px;
+        font-size: large;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    /* przycisk */
+    button {
+        padding: 10px;
+        width: auto;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<form>
+<table>
+    <tr>
+        <td class="col-left">Adres e-mail:</td>
+        <td class="col-right">
+            <input type="email" placeholder="adres@email.com">
+        </td>
+    </tr>
+
+    <tr>
+        <td class="col-left">Hasło:</td>
+        <td class="col-right">
+            <input type="password" placeholder="minimum 8 znaków">
+        </td>
+    </tr>
+
+    <tr>
+        <td class="col-left">Rola:</td>
+        <td class="col-right radio-group">
+            <label><input type="radio" name="rola" checked> kandydat</label>
+            <label><input type="radio" name="rola"> aplikant</label>
+            <label><input type="radio" name="rola"> kursant</label>
+            <label><input type="radio" name="rola"> absolwent</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="col-left">Grupa:</td>
+        <td class="col-right checkbox-group">
+            <label><input type="checkbox"> wiosenna</label>
+            <label><input type="checkbox"> letnia</label>
+            <label><input type="checkbox"> jesienna</label>
+            <label><input type="checkbox"> zimowa</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="col-left"></td>
+        <td class="col-right">
+            <button type="submit">Wyślij</button>
+        </td>
+    </tr>
+
+</table>
+</form>
+
+</body>
+</html>

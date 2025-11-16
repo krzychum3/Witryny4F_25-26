@@ -13,49 +13,82 @@
 
         table {
             border-collapse: collapse;
-            border: 1px dotted grey;
+            width: 100%;
         }
 
         td {
             border: 1px dotted gray;
-            text-align: left;
-            margin: 10px 10px 10px
+            margin: 10px 30px;
+            vertical-align: middle;
+            padding: 5px 10px;
         }
 
-        input[type="text"] {}
+        input[type="text"] {
+            background-color: lightblue;
+            border-radius: 15px;
+            border: 2px solid cadetblue;
+            font-family: Poor Richard;
+            padding: 5px 10px;
+        }
 
-        input[type="password"] {}
+        input[type="password"] {
+            background-color: lightblue;
+            border-radius: 15px;
+            border: 2px solid cadetblue;
+            font-family: Poor Richard;
+            padding: 5px 10px;
+        }
 
-        input[type="text"]:focus {}
+        input[type="text"]:focus {
+            background-color: aliceblue;
+        }
     </style>
 </head>
 
 <body>
     <form>
         <table>
-        <tr>
-            <td>Adres e-mail:</td>
-            <td><input type="text" placeholder="adres@email.com"></td>
-        </tr>
-        <tr>
-            <td>Hasło:</td>
-            <td><input type="password" placeholder="minimum 8 znaków"></td>
-        </tr>
-        <tr>
-            <td>Rola</td>
-            <td><input type="radio" checked >kandydat<input type="radio">aplikant<input type="radio">kursant<input
-                    type="radio">absolwent</td>
-        </tr>
-        <tr>
-            <td>Grupa</td>
-            <td><input type="checkbox">wiosenna<input type="checkbox">letnia<input type="checkbox">jesienna<input
-                    type="checkbox">zimowa</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><input type="submit" value="Wyślij"></td>
-        </tr>
-    
+            <tr>
+                <td>Adres e-mail:</td>
+                <td><input type="text" placeholder="adres@email.com"></td>
+            </tr>
+            <tr>
+                <td>Hasło:</td>
+                <td><input type="password" placeholder="minimum 8 znaków"></td>
+            </tr>
+            <tr>
+                <td>Rola:</td>
+                <td>
+                    <input type="radio" checked>
+                    <label>kandydat</label>
+                    <input type="radio">
+                    <label>aplikant</label>
+                    <input input type="radio">
+                    <label>kursant</label>
+                    <input input type="radio">
+                    <label>absolwent</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Grupa:</td>
+                <td>
+                    <input type="checkbox">
+                    <label>wiosenna</label>
+                    <input type="checkbox">
+                    <label>letnia</label>
+                    <input input type="checkbox">
+                    <label>jesienna</label>
+                    <input input type="checkbox">
+                    <label>zimowa</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Wyślij</button>
+                </td>
+            </tr>
+
         </table>
     </form>
 </body>
