@@ -11,6 +11,14 @@
             font-size: large;
         }
 
+        .kolumna_lewa {
+            width: 25%;
+        }
+
+        .kolumna_prawa {
+            width: 75%;
+        }
+
         table {
             border-collapse: collapse;
             width: 100%;
@@ -22,24 +30,27 @@
             vertical-align: middle;
             padding: 5px 10px;
         }
-
-        input[type="text"] {
-            background-color: lightblue;
-            border-radius: 15px;
-            border: 2px solid cadetblue;
-            font-family: Poor Richard;
-            padding: 5px 10px;
-        }
-
+        input[type="text"],
         input[type="password"] {
             background-color: lightblue;
             border-radius: 15px;
             border: 2px solid cadetblue;
             font-family: Poor Richard;
             padding: 5px 10px;
+            width: 100%;
         }
 
-        input[type="text"]:focus {
+        button {
+            background-color: lightblue;
+            border: 2px solid cadetblue;
+            border-radius: 15px;
+            font-family: Poor Richard;
+            padding: 10px;
+
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
             background-color: aliceblue;
         }
     </style>
@@ -49,16 +60,16 @@
     <form>
         <table>
             <tr>
-                <td>Adres e-mail:</td>
-                <td><input type="text" placeholder="adres@email.com"></td>
+                <td class="kolumna_lewa">Adres e-mail:</td>
+                <td class="kolumna_prawa"><input type="text" placeholder="adres@email.com"></td>
             </tr>
             <tr>
-                <td>Hasło:</td>
-                <td><input type="password" placeholder="minimum 8 znaków"></td>
+                <td class="kolumna_lewa">Hasło:</td>
+                <td class="kolumna_prawa"><input type="password" placeholder="minimum 8 znaków"></td>
             </tr>
             <tr>
-                <td>Rola:</td>
-                <td>
+                <td class="kolumna_lewa">Rola:</td>
+                <td class="kolumna_prawa">
                     <input type="radio" checked>
                     <label>kandydat</label>
                     <input type="radio">
@@ -70,8 +81,8 @@
                 </td>
             </tr>
             <tr>
-                <td>Grupa:</td>
-                <td>
+                <td class="kolumna_lewa">Grupa:</td>
+                <td class="kolumna_prawa">
                     <input type="checkbox">
                     <label>wiosenna</label>
                     <input type="checkbox">
@@ -83,8 +94,8 @@
                 </td>
             </tr>
             <tr>
-                <td></td>
-                <td>
+                <td class="kolumna_lewa"></td>
+                <td class="kolumna_prawa">
                     <button type="submit">Wyślij</button>
                 </td>
             </tr>
