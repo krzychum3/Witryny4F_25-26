@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            border-left: 3px solid blueviolet;
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+<form method="post">
+    <table>
+        <tr>
+            <td>
+                <label>Marka:*</label><input type="text" required>
+            </td>
+            <td rowspan="2">
+                <label>Typ nadwozia:*</label>
+                <select>
+                    <option>coupé</option>
+                    <option>hatchback</option>
+                    <option>kabriolet</option>
+                    <option>kombi</option>
+                    <option>sedan</option>
+                </select>
+            </td>
+            <td></td>
+            <td></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td>
+                <label>Model:</label><input type="text">
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
