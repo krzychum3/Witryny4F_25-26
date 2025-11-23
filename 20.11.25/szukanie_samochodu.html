@@ -8,23 +8,27 @@
         table {
             border-collapse: collapse;
             width: 100%;
+            table-layout: fixed;
         }
         td {
             border-left: 3px solid blueviolet;
-            margin: 10px 20px;
+            padding: 10px 20px;
+        }
+        #gwiazdka {
+            color: rgb(255, 0, 0);
         }
     </style>
 </head>
 <body>
-<form method="post">
+<form method="get">
     <table>
         <tr>
             <td>
-                <label>Marka:*</label><input type="text" required>
+                <label>Marka:<span id="gwiazdka">* </span></label><input type="text" required>
             </td>
             <td rowspan="2">
-                <label>Typ nadwozia:*</label>
-                <select>
+                <label>Typ nadwozia:<span id="gwiazdka">* </span></label>
+                <select id="nadwozie" multiple required size="5">
                     <option>coupé</option>
                     <option>hatchback</option>
                     <option>kabriolet</option>
@@ -32,16 +36,36 @@
                     <option>sedan</option>
                 </select>
             </td>
-            <td></td>
-            <td></td>
-            <td rowspan="2"></td>
+            <td>
+                <label>Miesiąc i rok produkcji: </label>
+                <input type="month">
+            </td>
+            <td>
+                <label>Przebieg: </label>
+                <input type="range" min="25000" max="250000" step="25000" value="25000"><output>25000</output>
+            </td>
+            <td rowspan="2">
+                <button type="submit">Szukaj</button>
+            </td>
         </tr>
         <tr>
             <td>
-                <label>Model:</label><input type="text">
+                <label>Model: </label><input type="text">
             </td>
-            <td></td>
-            <td></td>
+            <td>
+                <label>Rodzaj paliwa: </label>
+                <select>
+                    <option>benzyna</option>
+                    <option>benzyna + elektryk</option>
+                    <option>benzyna + gaz</option>
+                    <option>elektryk</option>
+                    <option>diesel</option>
+                </select>
+            </td>
+            <td>
+                <label>Cena do: </label>
+                <input type="range" min="2000" max="500000" step="1000" value="2000"><output>2000</output>
+            </td>
         </tr>
     </table>
 </form>
