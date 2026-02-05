@@ -1,0 +1,20 @@
+div.produkty {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+}
+div.karta {
+    display:flex;
+    border: 1px solid grey;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+    padding: 10px;
+    /* flex-grow: 0;
+    flex-shrink: 0; */
+
+}
