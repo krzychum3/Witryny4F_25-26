@@ -1,6 +1,8 @@
 div.produkty {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 div.karta {
     display: flex;
@@ -10,7 +12,7 @@ div.karta {
     width: 250px;
     height: 230px;
     padding: 10px;
-    flex-basis: 35%;
+    flex: 1 1 300px;
 }
 button {
     margin-top: auto;
