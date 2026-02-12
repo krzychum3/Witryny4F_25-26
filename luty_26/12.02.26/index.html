@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .naglowek {
+            display: flex;
+            background-color: #223149;
+            color: white;
+            align-items: center;
+        }
+
+        .glowna {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            border: 5px rgb(209, 207, 207) solid;
+            padding: 10px;
+        }
+
+        .stopka {
+            display: flex;
+            background-color: #223149;
+            color: white;
+            justify-content: center;
+        }
+
+        .lewa {}
+
+        .srodek {}
+
+        .prawa {
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body style="font-family: sans-serif;">
+    <header class="naglowek">
+        <div>
+            <h1><svg width="20" height="20"></svg>Zarządzanie Smart City</h1>
+        </div>
+    </header>
+    <main class="glowna">
+        <aside class="lewa">
+            <ul type="none">
+                <li>Transport</li>
+                <li>Energia</li>
+                <li>Środowisko</li>
+                <li>Bezpieczeństwo</li>
+            </ul>
+        </aside>
+        <section class="srodek">
+            <h3>Mapa miasta</h3>
+            <p>Interaktywna wizualizacja infrastruktury</p>
+        </section>
+        <aside class="prawa">
+            <div><b>120 km</b><br>Dróg</div>
+            <div><b>45%</b><br>Zieleni</div>
+            <div><b>98%</b><br>Oświetlenia LED</div>
+        </aside>
+    </main>
+    <footer class="stopka">
+        <p>&copy; 2026 Smart City - autor: Jan Kowalski</p>
+    </footer>
+</body>
+
+</html>
