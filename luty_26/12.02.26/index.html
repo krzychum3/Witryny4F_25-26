@@ -6,62 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 0;
+        }
         .naglowek {
             display: flex;
             background-color: #223149;
             color: white;
+            padding: 10px;
+        }
+
+        .tytul {
+            display: flex;
             align-items: center;
+            gap: 10px;
+            
         }
 
         .glowna {
             display: flex;
-            flex-direction: row;
-            gap: 100px;
-            border: 5px rgb(209, 207, 207) solid;
-            padding: 10px;
+            gap: 20px;
+            padding: 20px;
+            background-color: rgb(238, 238, 238);
+        }
+
+        aside.lewa {
+            background: white;
+            width: 220px;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .lewa > ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+        }
+        ul > li {
+            
+        }
+
+        .srodek {
+            flex: 1;
+            background: white;
+            margin-top: 0;
+            padding: 20px;
+            
+        }
+        section.srodek h2 {
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .prawa {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+        }
+        aside.prawa div {
+            background: white;
+            padding: 16px;
+            text-align: center;
         }
 
         .stopka {
-            display: flex;
             background-color: #223149;
             color: white;
-            justify-content: center;
+            text-align: center;
+            padding: 5px;
+        }
+        svg {
+            height: 22px;
+            fill: rgb(29, 157, 207)
         }
 
-        .lewa {}
-
-        .srodek {}
-
-        .prawa {
-            text-align: center;
-
+        li > svg {
+            fill: grey;
         }
     </style>
 </head>
 
 <body style="font-family: sans-serif;">
     <header class="naglowek">
-        <div>
-            <h1><svg width="20" height="20"></svg>Zarządzanie Smart City</h1>
+        <div class="tytul">
+            <svg width="30">
+                <rect x="0" y="10" width="5" height="12"></rect>
+                <rect x="8" y="4" width="5" height="18"></rect>
+                <rect x="16" y="12" width="5" height="10"></rect>
+            </svg>
+            <h1>Zarządzanie Smart City</h1>
         </div>
     </header>
     <main class="glowna">
         <aside class="lewa">
-            <ul type="none">
-                <li>Transport</li>
-                <li>Energia</li>
-                <li>Środowisko</li>
-                <li>Bezpieczeństwo</li>
+            <ul>
+                <li>
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                    Transport</li>
+                <li>
+                    <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"/></svg>
+                    Energia</li>
+                <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 22,22 2,22"/></svg>
+                    Środowisko</li>
+                <li>
+                    <svg width="24" height="24" viewBox="0 0 40 40 " style="transform: rotate(270deg);"><polygon points="8,5 30,10 30,30 8,35"></polygon></svg>
+                    Bezpieczeństwo</li>
             </ul>
         </aside>
         <section class="srodek">
-            <h3>Mapa miasta</h3>
+            <h2>Mapa miasta</h2>
             <p>Interaktywna wizualizacja infrastruktury</p>
         </section>
         <aside class="prawa">
-            <div><b>120 km</b><br>Dróg</div>
-            <div><b>45%</b><br>Zieleni</div>
-            <div><b>98%</b><br>Oświetlenia LED</div>
+            <div><svg viewBox="0"><circle cx="84" cy="10" r="10"/></svg><b>120 km</b><br>Dróg</div>
+            <div><svg viewBox="0"><rect x="76" y="4" width="16" height="16"/></svg><b>45%</b><br>Zieleni</div>
+            <div><svg viewBox="0"><polygon points="83,2 93,23 5,130"/></svg><b>98%</b><br>Oświetlenia LED</div>
         </aside>
     </main>
     <footer class="stopka">
