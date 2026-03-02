@@ -1,0 +1,6 @@
+funkcje:
+calc(...), 
+clamp(min,pref,max), 
+min(..,..,..), 
+max(..,..,..), 
+scale(np. 1.1)
