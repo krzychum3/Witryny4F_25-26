@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Układ 70/30</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    height: 60px;
+    background-color: rgb(73,72,72);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+}
+
+/* ================= KONTENER ================= */
+
+.kontener {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    min-height: calc(100vh - 60px);
+}
+
+/* ================= MAIN ================= */
+
+main {
+    background-color: #ddd;
+
+    /* min 300px, max 800px */
+    width: clamp(300px, 70%, 800px);
+
+    padding: 1rem;
+}
+
+/* ================= ASIDE ================= */
+
+aside {
+    background-color: rgb(184,177,177);
+
+    /* min 200px, max 30% ekranu */
+    width: clamp(200px, 30%, 30vw);
+
+    /* padding zależny od szerokości */
+    padding: clamp(1rem, 2vw, 3rem);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>HEADER</h1>
+</header>
+
+<div class="kontener">
+    <main>
+        <h2>MAIN CONTENT</h2>
+        <p>
+            Wysokość = wysokość okna – wysokość headera.
+            Szerokość: min 300px, max 800px,
+            płynnie dopasowuje się do szerokości ekranu.
+        </p>
+    </main>
+
+    <aside>
+        <h2>ASIDE</h2>
+        <p>
+            Szerokość: nie mniejsza niż 200px i nie większa niż 30% ekranu.
+            Padding: min 1rem, max 3rem, zależny od szerokości.
+        </p>
+    </aside>
+</div>
+
+</body>
+</html>

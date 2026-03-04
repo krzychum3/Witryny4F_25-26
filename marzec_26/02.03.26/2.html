@@ -6,40 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            margin: 0;
+        }
         header {
+            display: flex;
             background-color: rgb(73, 72, 72);
             color: white;
-            align-items: center;
-            justify-items: center;
             height: 60px;
+            align-items: center;
+            justify-content: center;
         }
 
         .kontener {
             display: grid;
-            grid-template-columns: 3fr 1fr;
+            grid-template-columns:
+            minmax(300px, 800px)
+            minmax(200px, 30vw);
+            width: 100%;
+            min-height: calc(100vh - 60px);
         }
-
-        div main {
-            width: min(300px), max(800px);
-
-        }
-
         div aside {
             background-color: rgb(184, 177, 177);
-            padding: min(1rem), max(3rem);
+            padding: clamp(1rem, 2vw, 3rem);
+            
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>HEADER</h1>
+        <h2>HEADER (wysokość: 60px; zawsze przyklejony do góry)</h2>
     </header>
     <div class="kontener">
-        <main>MAIN CONTENT<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni non dignissimos obcaecati,
-                voluptate laboriosam nihil sunt aliquid veritatis cupiditate amet!</p>
+        <main>MAIN CONTENT<p>(wysokość = wysokość okna – wysokość headera;
+    szerokość: minimum 300px oraz maksimum 800px oraz płynnie dopasowuje się do szerokości ekranu)</p>
         </main>
-        <aside>ASIDE</aside>
+        <aside>ASIDE
+        <p>(szerokość: nie mniejsza niż 200px i nie większa niż 30% szerokości ekranu;
+    padding: minimum 1rem i maksimum 3rem oraz zależny od szerokości ekranu)</p>
+        </aside>
     </div>
 </body>
 
