@@ -1,0 +1,39 @@
+* {
+    font-family: Verdana;
+    margin: 0;
+}
+header {
+    display: flex;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.kontener {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.kontener > div {
+    color: white;
+    border-radius: 5px;
+    padding: 40px;
+}
+.pierwszy {
+    background-color: #e74c3c;
+}
+.drugi {
+    background-color: #3498db;
+}
+.trzeci {
+    background-color: #2ecc71;
+}
+.czwarty {
+    background-color: #9b59b6;
+}
+.piąty {
+    background-color: #f55107;
+}

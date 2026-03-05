@@ -1,0 +1,39 @@
+* {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f0f4ff;
+}
+h1 {
+    color: #333366;
+}
+.kontener {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+div > div {
+    color: ivory;
+    padding: 5px;
+    box-shadow: 0 10px 25px lightgray;
+    border-radius: 5px;
+}
+.pierwszy > * {
+    background-color: #4a90e2;
+}
+.pierwszy {
+    background-color: #4a90e2;
+}
+.drugi > * {
+    background-color: #50c878;
+}
+.drugi {
+    background-color: #50c878;
+}
+.trzeci > * {
+    background-color: #9b59b6;
+}
+.trzeci {
+    background-color: #9b59b6;
+}
