@@ -4,8 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         body { /* usun flexa z body, cos z divem zrob */
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            height: 100vh;
+        }
+        .pylon {
+            width: 160px;
+            background: white;                                     /* rozszerz troche divy, jak na zdjeciu, ewentualnie gap ustawic */
+            border: 2px solid black;                               /* dodaj obrazki svg lub img */
+        }
+        .pylon h3 {
+            padding: 5px;
+        }
+        .delta-oil {
+            background-color: red;
+            color: blue;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .bialy {
+            background-color: white;
+            height: 40px;
+        }
+        .sklep {
+            background: red;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .cena {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: red;
+            color: white;
+            padding: 10px;
+            border-top: 2px solid #222;
+
+        }
+        .cena .kwota {
+            background-color: black;
+            color: red;
+        }
+
+        .paliwo {
+            font-weight: bold;
+        }
+
+        .kwota {
+            font-family: "Courier New", monospace;
+            font-size: 20px;
+        }
+
+
+        .dol {
+            background: red;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="pylon">
+        <div class="delta-oil">DELTA OIL</div>
+    <div class="bialy"></div>
+    <div class="sklep">SKLEP</div>
+
+    <div class="cena">
+        <span class="paliwo">95</span>
+        <span class="kwota">5.60</span>
+    </div>
+
+    <div class="cena">
+        <span class="paliwo">ON</span>
+        <span class="kwota">5.60</span>
+    </div>
+
+    <div class="cena">
+        <span class="paliwo">98</span>
+        <span class="kwota">5.60</span>
+    </div>
+
+    <div class="cena">
+        <span class="paliwo">LPG</span>
+        <span class="kwota">5.60</span>
+    </div>
+
+    <div class="dol">
+        
+    </div>
+    </div>
 </body>
 </html>
