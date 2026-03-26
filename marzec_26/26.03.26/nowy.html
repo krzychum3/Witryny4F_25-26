@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kontener {
+            display: grid;
+            grid-template-columns: 200px;
+            gap: 5px;
+            justify-content: center;
+            /* border: black 1px solid; */
+        }
+        div .delta-oil {
+            grid-template-columns: 1 / 10;
+            color: blue;
+            background-color: red;
+            text-align: center;
+            align-self: end;
+            height: 150px;
+            width: 200px;
+            /* cos aby napis byl na dole diva */
+        }
+        div .bialy {
+            grid-template-columns: 2 / 10;
+            background-color: rgb(214, 211, 211);
+            height: 50px;
+        }
+        div .sklep {
+            grid-template-columns: 3 / 10;
+            background-color: red;
+            color: white;
+            text-align: center;
+            font-size:300%;
+            height: 60px;
+            border-left: rgb(214, 211, 211) 20px solid;
+        }
+        div .cena {
+            grid-template-columns: 4 / 10, 5 / 10, 6 / 10, 7 / 10;
+            background-color: red;
+            height: 60px;
+            align-content: center;
+            border-left: rgb(214, 211, 211) 20px solid;
+        }
+        div .cena .ozn {
+            color: red;
+            background-color: white;
+        }
+        div .cena .ozn2 {
+            color: black;
+            background-color: white;
+        }
+        div .cena .kwota {
+            background-color: black;
+            color: red;
+            text-align: right;
+        }
+        div .znaki {
+            grid-template-columns: 8 / 10;
+            background-color: red;
+            height: 60px;
+            border-left: rgb(214, 211, 211) 20px solid;
+        }
+        div .znaki svg {
+            fill: blue;
+            vertical-align: middle;
+        }
+        div .platnosci {
+            grid-template-columns: 9 / 10;
+            background-color: red;
+            height: 60px;
+            border-left: rgb(214, 211, 211) 20px solid;
+        }
+        div .dol {
+            grid-template-columns: 10 / 10;
+            background: linear-gradient(
+                to top right,
+                rgb(214, 211, 211) 55%,
+                red 50%
+            );
+            height: 150px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="kontener">
+        <div class="delta-oil">DELTA OIL</div> 
+        <div class="bialy"></div>
+        <div class="sklep">SKLEP</div>
+        <div class="cena"><span class="ozn">95</span><span class="kwota">5.60</span></div>
+        <div class="cena"><span class="ozn2">ON</span><span class="kwota">5.60</span></div>
+        <div class="cena"><span class="ozn">98</span><span class="kwota">5.60</span></div>
+        <div class="cena"><span class="ozn2">LPG</span><span class="kwota">5.60</span></div>
+        <div class="znaki">
+            <svg viewBox="-8 -8 85 85" width="50px"><circle cx="9" cy="9" r="8"></circle></svg>
+            <svg viewBox="-20 3 85 85" width="150px"><circle cx="9" cy="9" r="8"></circle></svg>
+        </div>
+        <div class="platnosci"></div>
+        <div class="dol"></div>
+    </div>
+</body>
+</html>
