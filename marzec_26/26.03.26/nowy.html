@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,95 +11,167 @@
             grid-template-columns: 200px;
             gap: 5px;
             justify-content: center;
-            /* border: black 1px solid; */
         }
+
         div .delta-oil {
             grid-template-columns: 1 / 10;
             color: blue;
             background-color: red;
             text-align: center;
-            align-self: end;
+            align-content: end;
             height: 150px;
             width: 200px;
-            /* cos aby napis byl na dole diva */
+            box-shadow: 0 10px 25px rgb(66, 65, 65);
+            font-size: xx-large;
         }
+
+        div .delta-oil svg {
+            height: 70px;
+            width: 70px;
+            justify-items: center;
+            fill: blue;
+            stroke: white;
+            stroke-width: 2px;
+            transform: scale(2);
+        }
+
         div .bialy {
             grid-template-columns: 2 / 10;
             background-color: rgb(214, 211, 211);
             height: 50px;
+            box-shadow: 0 10px 25px rgb(66, 65, 65);
         }
+
         div .sklep {
             grid-template-columns: 3 / 10;
             background-color: red;
             color: white;
             text-align: center;
-            font-size:300%;
+            font-size: 300%;
             height: 60px;
             border-left: rgb(214, 211, 211) 20px solid;
+            box-shadow: 0 10px 25px rgb(66, 65, 65);
         }
+
         div .cena {
             grid-template-columns: 4 / 10, 5 / 10, 6 / 10, 7 / 10;
             background-color: red;
             height: 60px;
             align-content: center;
             border-left: rgb(214, 211, 211) 20px solid;
+            box-shadow: 0 10px 25px rgb(66, 65, 65);
         }
+
         div .cena .ozn {
             color: red;
             background-color: white;
+            font-size: x-large;
+            margin: 5px;
         }
+
         div .cena .ozn2 {
             color: black;
             background-color: white;
+            font-size: large;
+            margin: 5px;
         }
+
         div .cena .kwota {
             background-color: black;
             color: red;
             text-align: right;
+            font-family: monospace;
+            font-size: xx-large;
+            padding: 3px;
+            margin-left: 45px;
+
         }
+
         div .znaki {
             grid-template-columns: 8 / 10;
             background-color: red;
             height: 60px;
             border-left: rgb(214, 211, 211) 20px solid;
+            box-shadow: 0 10px 25px rgb(66, 65, 65);
         }
+
         div .znaki svg {
             fill: blue;
             vertical-align: middle;
+            height: 75px;
+            width: 42px;
+            stroke: white;
+            stroke-width: 3px;
         }
+
         div .platnosci {
             grid-template-columns: 9 / 10;
             background-color: red;
             height: 60px;
             border-left: rgb(214, 211, 211) 20px solid;
+            box-shadow: 0 10px 25px rgb(66, 65, 65);
         }
+
+        div .platnosci svg {
+            height: 50px;
+            vertical-align: middle;
+            stroke: white;
+            stroke-width: 2px;
+        }
+
         div .dol {
             grid-template-columns: 10 / 10;
-            background: linear-gradient(
-                to top right,
-                rgb(214, 211, 211) 55%,
-                red 50%
-            );
+            background: linear-gradient(to top right,
+                    rgb(214, 211, 211) 55%,
+                    red 50%);
             height: 150px;
             width: 200px;
+            box-shadow: 0 10px 25px rgb(66, 65, 65);
         }
     </style>
 </head>
+
 <body>
     <div class="kontener">
-        <div class="delta-oil">DELTA OIL</div> 
+        <div class="delta-oil"><svg viewBox="0 0 100 60">
+                <polygon points="50,10 10,90 90,90">
+            </svg>
+            <p>DELTA OIL</p>
+        </div>
         <div class="bialy"></div>
         <div class="sklep">SKLEP</div>
         <div class="cena"><span class="ozn">95</span><span class="kwota">5.60</span></div>
-        <div class="cena"><span class="ozn2">ON</span><span class="kwota">5.60</span></div>
+        <div class="cena"><span class="ozn2">ON</span><span class="kwota" style="margin-left: 43px;">5.60</span></div>
         <div class="cena"><span class="ozn">98</span><span class="kwota">5.60</span></div>
-        <div class="cena"><span class="ozn2">LPG</span><span class="kwota">5.60</span></div>
+        <div class="cena"><span class="ozn2">LPG</span><span class="kwota" style="margin-left: 35px;">5.60</span></div>
         <div class="znaki">
-            <svg viewBox="-8 -8 85 85" width="50px"><circle cx="9" cy="9" r="8"></circle></svg>
-            <svg viewBox="-20 3 85 85" width="150px"><circle cx="9" cy="9" r="8"></circle></svg>
+            <svg viewBox="0 0 85 85">
+                <circle cx="50" cy="30" r="25">
+            </svg>
+            <svg viewBox="0 0 85 85">
+                <circle cx="40" cy="30" r="25">
+            </svg>
+            <svg viewBox="0 0 85 85">
+                <circle cx="30" cy="30" r="25">
+            </svg>
+            <svg viewBox="0 0 85 85">
+                <circle cx="25" cy="30" r="25">
+            </svg>
         </div>
-        <div class="platnosci"></div>
+        <div class="platnosci">
+            <svg viewBox="-10 7 50 50" style="fill: darkblue;">
+                <rect x="5" y="25" height="25" width="33">
+            </svg>
+            <svg viewBox="-10 7 50 50" style="fill: mediumblue;">
+                <rect x="5" y="25" height="25" width="33">
+            </svg>
+            <svg viewBox="-10 7 50 50" style="fill: white; stroke: darkblue;
+            stroke-width: 2px;">
+                <rect x="5" y="25" height="25" width="33">
+            </svg>
+        </div>
         <div class="dol"></div>
     </div>
 </body>
+
 </html>
